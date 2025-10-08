@@ -9,3 +9,9 @@ function resizeCanvas() {
 
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
+
+
+const canvas = document.getElementById('rive-canvas');
+  const ctx = canvas.getContext('2d');
+
+ 
