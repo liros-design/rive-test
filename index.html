@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rive Fullscreen Animation</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Rive Canvas Runtime -->
+  <script src="https://unpkg.com/@rive-app/canvas"></script>
+</head>
+<body>
+  <canvas id="rive-canvas"></canvas>
+
+  <script>
+
+    new rive.Rive({
+      src: 'dimedis_animation.riv',                   
+      canvas: document.getElementById('rive-canvas'),
+      autoplay: true,                            
+      loop: true                                
+    
+    });
+
+  </script>
+</body>
+</html>
