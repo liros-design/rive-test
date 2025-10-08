@@ -1,5 +1,6 @@
+const canvas = document.getElementById('rive-canvas');
+
 function resizeCanvas() {
-  const canvas = document.getElementById('rive-canvas');
   const dpr = window.devicePixelRatio || 1;
   canvas.width = window.innerWidth * dpr;
   canvas.height = window.innerHeight * dpr;
@@ -7,11 +8,18 @@ function resizeCanvas() {
   canvas.style.height = window.innerHeight + 'px';
 }
 
-window.addEventListener('resize', resizeCanvas);
+// Initial sizing
 resizeCanvas();
 
+// Resize on window change
+window.addEventListener('resize', resizeCanvas);
 
-const canvas = document.getElementById('rive-canvas');
-  const ctx = canvas.getContext('2d');
-
- 
+// Initialize Rive
+new rive.Rive({
+  src: 'animation.riv',   // path to your .riv file
+  canvas: canvas,
+  autoplay: true,
+  loop: true,
+  fit: rive.Fit.cover,          // scale animation to fill screen
+  alignment: rive.Alignment.center
+});
