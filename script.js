@@ -16,7 +16,7 @@ window.addEventListener('resize', resizeCanvas);
 
 // Initialize Rive
 new rive.Rive({
-  src: 'animation.riv',   // path to your .riv file
+  src: 'dimedis_animation.riv',   // path to your .riv file
   canvas: canvas,
   autoplay: true,
   loop: true,
