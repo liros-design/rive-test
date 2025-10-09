@@ -20,6 +20,6 @@ new rive.Rive({
   canvas: canvas,
   autoplay: true,
   loop: true,
-  fit: rive.Fit.cover,          // scale animation to fill screen
+  fit: rive.Fit.contain,          
   alignment: rive.Alignment.center
 });
