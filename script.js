@@ -20,6 +20,6 @@ new rive.Rive({
   canvas: canvas,
   autoplay: true,
   loop: true,
-  fit: rive.Fit.contain,          
+  fit: rive.Fit.fill, 
   alignment: rive.Alignment.center
 });
